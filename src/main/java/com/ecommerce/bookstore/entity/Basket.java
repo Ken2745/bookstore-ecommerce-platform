@@ -1,20 +1,21 @@
 package com.ecommerce.bookstore.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
-@Data
-@RedisHash("BasketItem")
-public class Basket {
+import java.util.ArrayList;
+import java.util.List;
 
+@Data
+@NoArgsConstructor
+@RedisHash("Basket")
+public class Basket {
     @Id
-    private Integer id;
-    private String name;
-    private String description;
-    private Long price;
-    private String pictureUrl;
-    private String productBrand;
-    private String productType;
-    private Integer quantity;
+    private String id;
+    private List<BasketItem> items = new ArrayList<>();
+    public Basket(String id){
+        this.id = id;
+    }
 }
