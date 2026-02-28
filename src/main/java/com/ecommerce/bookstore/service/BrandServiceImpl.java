@@ -4,7 +4,8 @@ import java.util.stream.Collectors;
 
 import com.ecommerce.bookstore.entity.Brand;
 import com.ecommerce.bookstore.model.BrandResponse;
-import com.ecommerce.bookstore.repository.BrandRepository;
+import com.ecommerce.bookstore.repository.jpa.BrandRepository;
+
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import java.util.List;

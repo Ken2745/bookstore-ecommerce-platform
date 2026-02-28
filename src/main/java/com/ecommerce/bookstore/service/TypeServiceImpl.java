@@ -3,7 +3,7 @@ package com.ecommerce.bookstore.service;
 import java.util.stream.Collectors;
 
 import com.ecommerce.bookstore.model.TypeResponse;
-import com.ecommerce.bookstore.repository.TypeRepository;
+import com.ecommerce.bookstore.repository.jpa.TypeRepository;
 import com.ecommerce.bookstore.entity.Type;
 
 

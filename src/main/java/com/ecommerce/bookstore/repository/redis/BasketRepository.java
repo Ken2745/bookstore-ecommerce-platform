@@ -1,4 +1,4 @@
-package com.ecommerce.bookstore.repository;
+package com.ecommerce.bookstore.repository.redis;
 
 import com.ecommerce.bookstore.entity.Basket;
 import org.springframework.data.repository.CrudRepository;

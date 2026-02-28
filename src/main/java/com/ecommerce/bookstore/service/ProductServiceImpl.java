@@ -5,7 +5,8 @@ import java.util.stream.Collectors;
 import com.ecommerce.bookstore.entity.Product;
 import com.ecommerce.bookstore.exceptions.ProductNotFoundException;
 import com.ecommerce.bookstore.model.ProductResponse;
-import com.ecommerce.bookstore.repository.ProductRepository;
+import com.ecommerce.bookstore.repository.jpa.ProductRepository;
+
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

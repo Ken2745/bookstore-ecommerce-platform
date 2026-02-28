@@ -5,7 +5,8 @@ import com.ecommerce.bookstore.entity.Basket;
 import com.ecommerce.bookstore.entity.BasketItem;
 import com.ecommerce.bookstore.model.BasketItemResponse;
 import com.ecommerce.bookstore.model.BasketResponse;
-import com.ecommerce.bookstore.repository.BasketRepository;
+import com.ecommerce.bookstore.repository.redis.BasketRepository;
+
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
