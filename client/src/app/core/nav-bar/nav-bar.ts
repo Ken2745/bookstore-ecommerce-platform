@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 // import { Observable } from 'rxjs';
 // import { AccountService } from 'src/app/account/account.service';
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
+  standalone: true,
   imports: [],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.scss',
