@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { BasketService } from '../../basket/basket.service';
+import { Basket, BasketItem } from '../../shared/models/basket';
 
 @Component({
   selector: 'app-review',
@@ -6,4 +9,29 @@ import { Component } from '@angular/core';
   templateUrl: './review.html',
   styleUrl: './review.scss',
 })
-export class Review {}
+export class Review implements OnInit {
+  basket: Basket | null = new Basket();
+  
+  constructor(public basketService: BasketService, private router: Router){}
+  
+  ngOnInit(): void {
+    this.basketService.basketSource$.subscribe((basket) =>{
+      this.basket = basket;
+    })
+  }
+
+  extractImageName(item: BasketItem): string | null{
+    if(item && item.pictureUrl){
+      const parts = item.pictureUrl.split('/');
+      if(parts.length>0){
+        return parts[parts.length-1];
+      }
+    }
+    return null;
+  }
+  submitOrder(){
+    this.basketService.clearBasket();
+    this.router.navigate(['/store']);
+  }
+
+}

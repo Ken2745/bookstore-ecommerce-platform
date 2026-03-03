@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-//import { MatInputModule } from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { PaginationHeader } from './components/pagination-header/pagination-header';
@@ -20,7 +20,7 @@ import { OrderSummary } from './components/order-summary/order-summary';
     ReactiveFormsModule,
     CarouselModule.forRoot(),
     PaginationModule.forRoot(),
-   // MatInputModule
+    MatInputModule
   ],exports:[
     PaginationModule,
     PaginationHeader,
@@ -29,7 +29,7 @@ import { OrderSummary } from './components/order-summary/order-summary';
     OrderSummary,
     FormsModule,
     ReactiveFormsModule,
-   // MatInputModule
+    MatInputModule
   ]
 })
 export class SharedModule { }
