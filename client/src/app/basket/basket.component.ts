@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { BasketService } from './basket.service';
 import { Basket, BasketItem } from '../shared/models/basket';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { OrderSummary } from '../shared/components/order-summary/order-summary';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-basket',
-  imports: [CommonModule, OrderSummary],
+  imports: [CommonModule, OrderSummary, RouterModule],
   templateUrl: './basket.component.html',
   styleUrl: './basket.component.scss',
 })

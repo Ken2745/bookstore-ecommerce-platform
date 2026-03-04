@@ -14,9 +14,6 @@ import { SectionHeader } from './core/section-header/section-header';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-// export class App {
-//   protected readonly title = signal('client');
-// }
 
 export class App implements OnInit {
   title = 'BookStore';

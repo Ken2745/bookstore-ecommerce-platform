@@ -6,12 +6,13 @@ import { BreadcrumbService } from 'xng-breadcrumb';
 import { BasketService } from '../../basket/basket.service';
 import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   standalone: true,
-  imports: [CommonModule],
-  selector: 'app-product-details.component',
+  imports: [CommonModule, RouterModule],
+  selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.scss',
 })

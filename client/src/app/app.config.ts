@@ -22,6 +22,7 @@ import { provideToastr, ToastrModule } from 'ngx-toastr';
 //import { BreadcrumbModule } from 'xng-breadcrumb';
 
 
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
