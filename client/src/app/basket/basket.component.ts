@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BasketService } from './basket.service';
 import { Basket, BasketItem } from '../shared/models/basket';
-
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { OrderSummary } from '../shared/components/order-summary/order-summary';
 
 @Component({
+  standalone: true,
   selector: 'app-basket',
-  imports: [],
+  imports: [CommonModule, OrderSummary],
   templateUrl: './basket.component.html',
   styleUrl: './basket.component.scss',
 })
@@ -41,4 +44,8 @@ export class BasketComponent implements OnInit {
     this.basketService.remove(itemId);
   }
 }
+
+
+
+
 

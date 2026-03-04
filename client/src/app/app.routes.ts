@@ -1,26 +1,78 @@
-// import { Routes } from '@angular/router';
-// export const routes: Routes = [];
+// // import { Routes } from '@angular/router';
+// // export const routes: Routes = [];
 
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+// import { NgModule } from '@angular/core';
+// import { RouterModule, Routes } from '@angular/router';
+// import { HomeComponent } from './home/home.component';
+// import { ServerError } from './core/server-error/server-error';
+// import { NotFound } from './core/not-found/not-found';
+
+// //'client/src/app/core/not-found/not-found';
+// export const routes: Routes = [
+//   {path:'', component: HomeComponent, data:{breadcrumb: 'Home'}},
+//   //{path: '', loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),}
+
+//   {path: 'store', loadChildren: () => import('./store/store.routes').then(m => m.STORE_ROUTES) },
+//   //{path:'store', loadChildren:()=>import('./store/store.module').then(m=>m.StoreModule)},
+
+//   {path: 'basket', loadComponent: () =>import('./basket/basket.component').then(m => m.BasketComponent)},
+//   //{path:'basket', loadChildren:()=>import('./basket/basket.module').then(m=>m.BasketModule)},
+
+//   {path: 'account', loadChildren: () => import('./account/account.routes').then(m => m.ACCOUNT_ROUTES)},
+//   // {path:'account', loadChildren:()=>import('./account/account.module').then(m=>m.AccountModule)},
+
+//   {path: 'checkout', loadChildren: () => import('./checkout/checkout.routes').then(m => m.CHECKOUT_ROUTES)},
+//   //{path:'checkout', loadChildren:()=>import('./checkout/checkout.module').then(m=>m.CheckoutModule)},
+
+//   {path:'not-found', component: NotFound},
+//   {path:'server-error', component: ServerError},
+//   {path:'**', redirectTo: '', pathMatch:'full'}
+// ];
+
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }
+
+import { Routes } from '@angular/router';
 import { ServerError } from './core/server-error/server-error';
 import { NotFound } from './core/not-found/not-found';
 
-//'client/src/app/core/not-found/not-found';
 export const routes: Routes = [
-  {path:'', component: HomeComponent, data:{breadcrumb: 'Home'}},
-  {path:'store', loadChildren:()=>import('./store/store.module').then(m=>m.StoreModule)},
-  {path:'basket', loadChildren:()=>import('./basket/basket.module').then(m=>m.BasketModule)},
-  {path:'account', loadChildren:()=>import('./account/account.module').then(m=>m.AccountModule)},
-  {path:'checkout', loadChildren:()=>import('./checkout/checkout.module').then(m=>m.CheckoutModule)},
-  {path:'not-found', component: NotFound},
-  {path:'server-error', component: ServerError},
-  {path:'**', redirectTo: '', pathMatch:'full'}
-];
+  {
+    path: '',
+    loadComponent: () =>
+      import('./home/home.component').then(m => m.HomeComponent),
+    data: { breadcrumb: 'Home' }
+  },
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+  {
+    path: 'store',
+    loadChildren: () =>
+      import('./store/store.routes').then(m => m.STORE_ROUTES)
+  },
+
+  {
+    path: 'basket',
+    loadComponent: () =>
+      import('./basket/basket.component').then(m => m.BasketComponent)
+  },
+
+  {
+    path: 'account',
+    loadChildren: () =>
+      import('./account/account.routes').then(m => m.ACCOUNT_ROUTES)
+  },
+
+  {
+    path: 'checkout',
+    loadChildren: () =>
+      import('./checkout/checkout.routes').then(m => m.CHECKOUT_ROUTES)
+  },
+
+  { path: 'not-found', component: NotFound },
+  { path: 'server-error', component: ServerError },
+
+  { path: '**', redirectTo: '', pathMatch: 'full' }
+];

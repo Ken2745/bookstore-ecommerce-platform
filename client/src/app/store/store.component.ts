@@ -3,13 +3,21 @@ import { StoreService } from './store.service';
 import { Product } from '../shared/models/product';
 import { Brand } from '../shared/models/brand';
 import { Type } from '../shared/models/type';
-import { PageChangedEvent } from 'ngx-bootstrap/pagination';
+import { PageChangedEvent, PaginationModule } from 'ngx-bootstrap/pagination';
 import { StoreModelService } from './store.model.service';
 import { ToastrService } from 'ngx-toastr';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ProductItemComponent } from './product-item/product-item.component';
+import { Pagination } from '../shared/components/pagination/pagination';
+import { PaginationHeader} from '../shared/components/pagination-header/pagination-header';
+
+
 
 @Component({
-  selector: 'app-store.component',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, FormsModule,PaginationModule, ProductItemComponent, Pagination, PaginationHeader],
+  selector: 'app-store',
   templateUrl: './store.component.html',
   styleUrl: './store.component.scss',
 })
@@ -131,3 +139,7 @@ export class StoreComponent implements OnInit {
     this.fetchProducts();
   }
 }
+
+
+
+

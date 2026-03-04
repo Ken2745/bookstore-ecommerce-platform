@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { BasketService } from '../../basket/basket.service';
 import { DeliveryOption } from '../../shared/models/deliveryOptions';
 import { CheckoutComponent } from '../checkout.component';
 
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @Component({
+  standalone: true,
   selector: 'app-shipment',
-  imports: [],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './shipment.html',
   styleUrl: './shipment.scss',
 })

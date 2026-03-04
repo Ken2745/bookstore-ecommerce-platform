@@ -3,9 +3,12 @@ import { Router } from '@angular/router';
 import { BasketService } from '../../basket/basket.service';
 import { Basket, BasketItem } from '../../shared/models/basket';
 
+import { CommonModule } from '@angular/common';
+
 @Component({
+  standalone: true,
   selector: 'app-review',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './review.html',
   styleUrl: './review.scss',
 })

@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Address} from '../../shared/models/address';
+import { Address } from '../../shared/models/address';
 import { CheckoutComponent } from '../checkout.component';
 
+
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 @Component({
+  standalone: true,
   selector: 'app-address',
-  imports: [],
+  imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule],
   templateUrl: './address.html',
   styleUrl: './address.scss',
 })

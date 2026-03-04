@@ -1,10 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { BasketService } from '../../basket/basket.service';
 import { Product } from '../../shared/models/product';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-product-item.component',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterModule],
+  selector: 'app-product-item',
   templateUrl: './product-item.component.html',
   styleUrl: './product-item.component.scss',
 })
