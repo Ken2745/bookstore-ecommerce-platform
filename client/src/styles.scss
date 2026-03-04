@@ -20,21 +20,69 @@ html {
 }
 
 body {
-  // Default the application to a light color theme. This can be changed to
-  // `dark` to enable the dark color theme, or to `light dark` to defer to the
-  // user's system settings.
-  color-scheme: light;
-
-  // Set a default background, font and text colors for the application using
-  // Angular Material's system-level CSS variables. Learn more about these
-  // variables at https://material.angular.dev/guide/system-variables
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
-
-  // Reset the user agent margin.
+  color-scheme: dark;
+  background: linear-gradient(135deg, #0f0c29, #1a1240, #05030f);
+  color: #f1f1ff;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  height: 100%;
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: #b084ff;
+}
+a:hover {
+  color: #d3b3ff;
+}
+
+/* Inputs */
+input, select, textarea {
+  background-color: #1b1533 !important;
+  color: #ffffff !important;
+  border: 1px solid #3a2f6f !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #b084ff !important;
+  box-shadow: 0 0 0 0.15rem rgba(176, 132, 255, 0.35);
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(180deg, #1a1433, #0f0b1f);
+  border: 1px solid #33285f;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(45deg, #7b5cff, #b084ff);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #9b7cff, #d3b3ff);
+}
+
+/* Pagination */
+.page-link {
+  background-color: #1a1433;
+  color: #f1f1ff;
+  border: 1px solid #3a2f6f;
+}
+
+.page-link:hover {
+  background-color: #b084ff;
+  color: #0b0718;
+  border-color: #b084ff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #e4dbff;
+  letter-spacing: 0.5px;
 }
 /* You can add global styles to this file, and also import other style files */
 
