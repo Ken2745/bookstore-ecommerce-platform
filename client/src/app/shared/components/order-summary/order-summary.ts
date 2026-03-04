@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { BasketService } from '../../../basket/basket.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-order-summary',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './order-summary.html',
   styleUrl: './order-summary.scss',
 })

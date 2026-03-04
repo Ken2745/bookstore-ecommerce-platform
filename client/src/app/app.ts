@@ -4,11 +4,13 @@ import { NavBar } from './core/nav-bar/nav-bar';
 
 import { BasketService } from './basket/basket.service';
 import { AccountService } from './account/account.service';
+import { NgxSpinnerComponent } from 'ngx-spinner';
+import { SectionHeader } from './core/section-header/section-header';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavBar],
+  imports: [RouterOutlet, NavBar, SectionHeader, NgxSpinnerComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

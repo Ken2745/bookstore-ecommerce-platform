@@ -1,8 +1,10 @@
-
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 @Component({
+  standalone: true,
   selector: 'app-pagination-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './pagination-header.html',
   styleUrl: './pagination-header.scss',
 })

@@ -18,18 +18,27 @@ import { routes } from './app.routes';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { ToastrModule } from 'ngx-toastr';
+import { provideToastr, ToastrModule } from 'ngx-toastr';
+//import { BreadcrumbModule } from 'xng-breadcrumb';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),              // AppRoutingModule
     provideHttpClient(withInterceptorsFromDi()), // HttpClientModule
+    provideToastr({
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true
+    }),
+    provideRouter(routes),
+    //importProvidersFrom(BreadcrumbModule),
+    provideHttpClient(withInterceptorsFromDi()),
+    importProvidersFrom(NgxSpinnerModule.forRoot({ type: 'square-jelly-box' })),
     
-    importProvidersFrom(
-      NgxSpinnerModule.forRoot({ type: 'square-jelly-box' }),
-      ToastrModule.forRoot()
-    ),
+    // importProvidersFrom(
+    //   NgxSpinnerModule.forRoot({ type: 'square-jelly-box' }),
+    //   ToastrModule.forRoot()
 
     { provide: 'HTTP_INTERCEPTORS', useClass: ErrorInterceptor, multi: true },
     { provide: 'HTTP_INTERCEPTORS', useClass: LoadingInterceptor, multi: true },
