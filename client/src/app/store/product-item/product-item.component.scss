@@ -1,0 +1,54 @@
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(255,46,99,0.25);
+}
+
+img {
+  object-fit: contain;
+  background: #000;
+  padding: 10px;
+}
+
+.card-body {
+  background: #151515;
+  color: #eee;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card-text {
+  color: #bbb;
+}
+
+/* Price */
+h5 {
+  color: #ff2e63;
+  font-weight: 800;
+}
+
+/* Buttons */
+button {
+  background: #ff2e63;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 15px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #ff5c86;
+  transform: scale(1.05);
+}

@@ -1,0 +1,84 @@
+/* Page header */
+h1 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e4dbff;
+}
+
+p {
+  font-size: 1.1rem;
+   color: #e4dbff;
+}
+
+/* Sidebar */
+section.col-3 {
+  background: linear-gradient(180deg, #111, #1a1a1a);
+  border-radius: 12px;
+  padding: 15px;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Sidebar titles */
+h5 {
+  color: #ff2e63;
+  font-weight: 700;
+  border-bottom: 1px solid #ff2e63;
+  padding-bottom: 5px;
+}
+
+/* Filter items */
+.list-group-item {
+  background: transparent;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255,255,255,0.08);
+}
+
+.list-group-item.active {
+  background-color: #ff2e63;
+  color: white;
+  font-weight: bold;
+}
+
+/* Search */
+input.form-control {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+}
+
+input.form-control::placeholder {
+  color: #aaa;
+}
+
+/* Buttons */
+button {
+  border-radius: 30px;
+}
+
+/* Product grid */
+section.col-9 {
+  padding-left: 25px;
+  
+}
+
+// /* Product card spacing */
+// .col-md-4 {
+//   display: flex;
+//   justify-content: center;
+// }
+
+/* Pagination */
+app-pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  
+}

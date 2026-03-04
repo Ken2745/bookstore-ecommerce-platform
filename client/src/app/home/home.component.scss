@@ -1,0 +1,80 @@
+/* Main title */
+h1 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e4dbff;
+  margin-top: 3rem;
+}
+
+/* Marketing container */
+.marketing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Divider */
+.featurette-divider {
+  margin: 5rem 0;
+  border-top: 2px solid #33285f;
+}
+
+/* Featurette layout */
+.featurette {
+  align-items: center;
+}
+
+/* Headings */
+.featurette-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e4dbff;
+}
+
+/* Sub text */
+.featurette-heading span {
+  color: #b084ff;
+  font-weight: 500;
+}
+
+/* Paragraph */
+.featurette .lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #c9c3ff;
+}
+
+/* Images */
+.featurette img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  border: 1px solid #33285f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featurette img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(176,132,255,0.5);
+}
+
+/* Spacing fix for reversed layout */
+.padding-left-20 {
+  padding-left: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featurette-heading {
+    font-size: 1.8rem;
+  }
+
+  .featurette img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .padding-left-20 {
+    padding-left: 0;
+  }
+}
