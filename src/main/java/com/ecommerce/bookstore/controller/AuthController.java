@@ -12,7 +12,6 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
@@ -20,7 +19,6 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
-    //private final UserDetailsService userDetailsService;
     private final InMemoryUserDetailsManager userDetailsService;
     private final AuthenticationManager manager;
     private final JwtHelper jwtHelper;
@@ -78,7 +76,7 @@ public class AuthController {
 
     private String extractTokenFromHeader(String tokenHeader) {
         if (tokenHeader != null && tokenHeader.startsWith("Bearer ")) {
-            return tokenHeader.substring(7); // Remove "Bearer " prefix
+            return tokenHeader.substring(7);
         }
         return null;
     }

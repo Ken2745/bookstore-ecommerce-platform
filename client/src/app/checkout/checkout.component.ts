@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Shipment } from './shipment/shipment';
-import { AddressComponent } from './address/address.component';
-import { Review } from './review/review';
 import { OrderSummary } from '../shared/components/order-summary/order-summary';
+import { RouterModule } from '@angular/router';
 
 @Component({
+  standalone: true,
   selector: 'app-checkout',
-  imports: [CommonModule, AddressComponent, Shipment, Review, OrderSummary],
+  imports: [CommonModule, OrderSummary, RouterModule],
   templateUrl: './checkout.component.html',
   styleUrl: './checkout.component.scss',
 })

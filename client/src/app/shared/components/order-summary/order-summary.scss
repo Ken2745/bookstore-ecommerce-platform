@@ -1,0 +1,52 @@
+.container {
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* Title */
+h3 {
+  color: #38bdf8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table */
+.table {
+  background: #0f172a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56,189,248,0.25);
+}
+
+/* Rows */
+.table td {
+  color: #ff2e63;
+  border-color: #334155;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+  background: rgba(56,189,248,0.08);
+}
+
+/* Total row */
+.table-success {
+  background: rgba(255,46,99,0.15) !important;
+  border-top: 1px solid #ff2e63;
+}
+
+.table-success td {
+  color: #ff2e63;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* Currency emphasis */
+.table td:last-child {
+  text-align: right;
+  color: #38bdf8;
+  font-weight: 600;
+}

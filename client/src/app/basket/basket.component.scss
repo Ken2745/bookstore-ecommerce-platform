@@ -1,100 +1,3 @@
-// .container {
-//   background: #0f172a;
-//   border-radius: 12px;
-//   padding: 1.5rem;
-//   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-// }
-
-// /* Title */
-// h2 {
-//   color: #e0e7ff;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-//   margin-bottom: 1rem;
-// }
-
-// /* Empty cart message */
-// .alert-info {
-//   background: #1e293b;
-//   color: #c7d2fe;
-//   border: none;
-// }
-
-// /* Table */
-// .table {
-//   color: #e5e7eb;
-//   background: transparent;
-
-//   thead {
-//     background: #1e293b;
-
-//     th {
-//       color: #c7d2fe;
-//       border-bottom: 1px solid #334155;
-//     }
-//   }
-
-//   tbody tr {
-//     border-bottom: 1px solid #334155;
-//     transition: background 0.2s ease;
-
-//     &:hover {
-//       background: #1e293b;
-//     }
-//   }
-
-//   td {
-//     vertical-align: middle;
-//   }
-
-//   img {
-//     border-radius: 6px;
-//     border: 1px solid #334155;
-//   }
-// }
-
-// /* Quantity buttons */
-// .btn-outline-secondary {
-//   border-color: #6366f1;
-//   color: #a5b4fc;
-
-//   &:hover {
-//     background: #6366f1;
-//     color: #fff;
-//   }
-// }
-
-// /* Delete button */
-// .btn-danger {
-//   background: #dc2626;
-//   border: none;
-
-//   &:hover {
-//     background: #b91c1c;
-//   }
-// }
-
-// /* Checkout button */
-// .btn-success {
-//   background: linear-gradient(135deg, #22c55e, #16a34a);
-//   border: none;
-//   font-weight: 600;
-
-//   &:hover {
-//     background: linear-gradient(135deg, #16a34a, #15803d);
-//   }
-// }
-
-// /* Order summary panel */
-// app-order-summary {
-//   display: block;
-//   background: #020617;
-//   padding: 1rem;
-//   border-radius: 12px;
-//   border: 1px solid #334155;
-//   color: #e5e7eb;
-// }
-
 .container {
   background: linear-gradient(180deg, #020617, #0f172a);
   padding: 2rem;
@@ -119,9 +22,12 @@ h2 {
 /* Table */
 .table {
   background: transparent;
-  color: #fff;
+  color: #ff2e63;
   border-collapse: separate;
   border-spacing: 0 10px;
+}
+.table td{
+  color: #ff2e63;
 }
 
 /* Header */
