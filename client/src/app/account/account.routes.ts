@@ -14,22 +14,12 @@ export const ACCOUNT_ROUTES: Routes = [
       import('./register/register')
         .then(m => m.Register),
     data: { breadcrumb: 'Register' }
-  }
+  },
+
+  {
+  path: 'profile',
+  loadComponent: () =>
+    import('./profile/profile')
+      .then(m => m.Profile)
+}
 ];
-
-// import { Routes } from '@angular/router';
-
-// export const routes: Routes = [
-//   {
-//     path: 'login',
-//     loadComponent: () =>
-//       import('./account/login/login.component')
-//         .then(m => m.LoginComponent)
-//   },
-//   {
-//     path: 'register',
-//     loadComponent: () =>
-//       import('./account/register/register')
-//         .then(m => m.Register)
-//   }
-// ];

@@ -24,8 +24,9 @@ export class App implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loadUser();
+    //this.loadUser();
     this.loadBasket();
+    this.accountService.loadUser();
   }
 
   loadBasket(){
@@ -33,9 +34,9 @@ export class App implements OnInit {
     if (basketId) this.basketService.getBasket(basketId);
   }
 
-  loadUser(){
-    this.accountService.loadUser();
-  }
+  // loadUser(){
+  //   this.accountService.loadUser();
+  // }
 
 
 }

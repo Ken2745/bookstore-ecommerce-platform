@@ -22,6 +22,7 @@ public class SecurityConfig {
 
     @Autowired
     private AuthenticationManagerBuilder authenticationManagerBuilder;
+    
 
     public SecurityConfig(JwtAuthenticationEntryPoint entryPoint, JwtAuthenticationFilter filter) {
         this.entryPoint = entryPoint;

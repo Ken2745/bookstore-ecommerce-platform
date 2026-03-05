@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
+  
   
 }
 
@@ -26,7 +27,8 @@
   align-items: center;
   color: #333;
   cursor: pointer;
-  position: relative; /* Add this line */
+  position: relative; 
+  pointer-events: auto;
 }
 
 /* Style Font Awesome icons */
