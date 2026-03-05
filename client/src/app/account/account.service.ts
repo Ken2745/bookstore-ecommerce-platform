@@ -45,6 +45,7 @@ export class AccountService {
       map(user=>{
         localStorage.setItem('token', user.token);
         this.currentUserSource.next(user);
+        return user;
       })
     )
   }
@@ -53,6 +54,7 @@ export class AccountService {
       map(user=>{
         localStorage.setItem('token', user.token);
         this.currentUserSource.next(user);
+        return user;
       })
     )
   }
