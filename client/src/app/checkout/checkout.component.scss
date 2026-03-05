@@ -1,0 +1,10 @@
+.nav-pills .nav-link {
+  background: #020617;
+  color: #38bdf8;
+  border: 1px solid #334155;
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(135deg,#ff2e63,#38bdf8);
+  color: white;
+}

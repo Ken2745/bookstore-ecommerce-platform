@@ -1,77 +1,175 @@
+// .navbar {
+//   background-color: #fff; /* Background color */
+//   border-bottom: 1px solid #ddd; /* Bottom border */
+//   /* Ensure the navbar is fixed at the top */
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 9999;
+  
+  
+// }
+
+// /* Center the brand name */
+// .navbar-brand {
+//   font-weight: bold;
+//   align-items: center;
+//   font-weight: bold;
+// }
+
+// /* Style the navigation links */
+// .navbar-nav .nav-item {
+//   margin-right: 10px; /* Space between nav items */
+// }
+
+// .navbar-nav .nav-link {
+//   display: flex;
+//   align-items: center;
+//   color: #333;
+//   cursor: pointer;
+//   position: relative; 
+//   pointer-events: auto;
+// }
+
+// /* Style Font Awesome icons */
+// .navbar-nav .nav-link .fa {
+//   margin-right: 5px; /* Space between icon and text */
+// }
+
+// /* Style the active link */
+// .nav-item.active .nav-link {
+//   color: #007bff; /* Active link text color */
+//   font-weight: bold; /* Active link text weight */
+// }
+
+// .cart-badge {
+//   background-color: rgb(210, 74, 74);
+//   color: white;
+//   border-radius: 50%;
+//   padding: 4px 8px;
+//   font-size: 12px;
+//   position: absolute; /* Use absolute positioning within the relative parent */
+//   top: -2px; /* Adjust this value to move the badge up */
+//   right: 2px; /* Adjust this value as needed to align it above the cart icon */
+//   transform: translateX(
+//     50%
+//   ); /* Use transform to precisely position the badge */
+//   z-index: 1; /* Ensure the badge is displayed above other content */
+// }
+
+// /* Target the cart icon specifically */
+// .navbar-nav .nav-link .fa-shopping-cart {
+//   margin-top: 5px;
+//   margin-bottom: auto;
+// }
+
+// /* Correct positioning for mobile view and collapsing */
+// .navbar-toggler {
+//   border: none;
+// }
+
+// .navbar-collapse {
+//   justify-content: flex-end;
+// }
+
+// @media (max-width: 991px) {
+//   .navbar-nav .nav-link {
+//     padding-left: 0.5rem;
+//     padding-right: 0.5rem;
+//   }
+// }
+
+// /* Ensure the navbar doesn't overlap content */
+// body {
+//   padding-top: 56px; /* Adjust to the height of your navbar */
+// }
+
 .navbar {
-  background-color: #fff; /* Background color */
-  border-bottom: 1px solid #ddd; /* Bottom border */
-  /* Ensure the navbar is fixed at the top */
+  background: linear-gradient(135deg, #020617, #1e1b4b);
+  border-bottom: 1px solid #38bdf8;
+  box-shadow: 0 0 15px rgba(56,189,248,0.35);
+
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  
-  
 }
 
-/* Center the brand name */
+/* Brand */
 .navbar-brand {
   font-weight: bold;
-  align-items: center;
-  font-weight: bold;
+  color: #38bdf8 !important;
+  letter-spacing: 1px;
 }
 
-/* Style the navigation links */
+/* Nav items spacing */
 .navbar-nav .nav-item {
-  margin-right: 10px; /* Space between nav items */
+  margin-right: 10px;
 }
 
+/* Links */
 .navbar-nav .nav-link {
   display: flex;
   align-items: center;
-  color: #333;
+  color: #e5e7eb;
   cursor: pointer;
-  position: relative; 
+  position: relative;
   pointer-events: auto;
+  transition: all 0.25s ease;
 }
 
-/* Style Font Awesome icons */
+/* Icons */
 .navbar-nav .nav-link .fa {
-  margin-right: 5px; /* Space between icon and text */
+  margin-right: 6px;
 }
 
-/* Style the active link */
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 6px rgba(56,189,248,0.6);
+  transform: translateY(-1px);
+}
+
+/* Active link */
 .nav-item.active .nav-link {
-  color: #007bff; /* Active link text color */
-  font-weight: bold; /* Active link text weight */
+  color: #ff2e63;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255,46,99,0.6);
 }
 
+/* Cart badge */
 .cart-badge {
-  background-color: rgb(210, 74, 74);
+  background: #ff2e63;
   color: white;
   border-radius: 50%;
   padding: 4px 8px;
   font-size: 12px;
-  position: absolute; /* Use absolute positioning within the relative parent */
-  top: -2px; /* Adjust this value to move the badge up */
-  right: 2px; /* Adjust this value as needed to align it above the cart icon */
-  transform: translateX(
-    50%
-  ); /* Use transform to precisely position the badge */
-  z-index: 1; /* Ensure the badge is displayed above other content */
+  position: absolute;
+  top: -4px;
+  right: 2px;
+  transform: translateX(50%);
+  z-index: 1;
+
+  box-shadow: 0 0 8px rgba(255,46,99,0.8);
 }
 
-/* Target the cart icon specifically */
+/* Cart icon adjustment */
 .navbar-nav .nav-link .fa-shopping-cart {
-  margin-top: 5px;
-  margin-bottom: auto;
+  margin-top: 4px;
 }
 
-/* Correct positioning for mobile view and collapsing */
+/* Mobile toggle */
 .navbar-toggler {
   border: none;
+  color: #38bdf8;
 }
 
+/* Mobile menu */
 .navbar-collapse {
   justify-content: flex-end;
 }
 
+/* Mobile link spacing */
 @media (max-width: 991px) {
   .navbar-nav .nav-link {
     padding-left: 0.5rem;
@@ -79,7 +177,7 @@
   }
 }
 
-/* Ensure the navbar doesn't overlap content */
+/* Prevent navbar overlap */
 body {
-  padding-top: 56px; /* Adjust to the height of your navbar */
+  padding-top: 56px;
 }
