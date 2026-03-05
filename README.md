@@ -1,4 +1,4 @@
-# Bookstore Application
+# ShelfSpace Bookstore Application
 
 A full-stack e-commerce application for buying and selling books, featuring a Spring Boot backend and an Angular frontend.
 
