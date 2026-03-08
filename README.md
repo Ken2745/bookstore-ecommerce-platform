@@ -168,3 +168,15 @@ For detailed API documentation, refer to the Swagger/OpenAPI documentation at `h
 ├── pom.xml                 # Maven configuration
 └── README.md
 ```
+## Application Flow
+<img width="975" height="426" alt="image" src="https://github.com/user-attachments/assets/190508e0-2495-4203-ad1e-6aaa9e72096c" />
+<img width="975" height="415" alt="image" src="https://github.com/user-attachments/assets/9584e90d-c41f-4ef7-b9c2-31929c376bbb" />
+<img width="975" height="517" alt="image" src="https://github.com/user-attachments/assets/61456bd0-b8b6-410e-a7fd-0374b0d1feb6" />
+<img width="975" height="444" alt="image" src="https://github.com/user-attachments/assets/e66dc929-eebf-4374-8965-1d649afd9a7c" />
+<img width="975" height="740" alt="image" src="https://github.com/user-attachments/assets/f4c98938-545a-4c45-b53b-a5bd824087ee" />
+<img width="975" height="556" alt="image" src="https://github.com/user-attachments/assets/90139ed4-457b-4e5c-9ed3-91f3d532d7e7" />
+<img width="975" height="487" alt="image" src="https://github.com/user-attachments/assets/732b8675-816e-4d10-b0c2-e55a67fc1fbf" />
+<img width="975" height="535" alt="image" src="https://github.com/user-attachments/assets/e2552d5a-cf07-447b-b2c6-8093eb5e45a8" />
+<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/ced3430b-3ad5-49f7-adde-45b5f4dea780" />
+<img width="975" height="403" alt="image" src="https://github.com/user-attachments/assets/ed89b6c5-77d2-40e1-a1d8-5a7cee2a5373" />
+
