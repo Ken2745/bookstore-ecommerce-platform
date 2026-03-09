@@ -5,7 +5,7 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 'Queens39?'
+      MYSQL_ROOT_PASSWORD: '[Password]'
     ports:
       - "3306:3306"
     volumes:
